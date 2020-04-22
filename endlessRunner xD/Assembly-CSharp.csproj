@@ -65,6 +65,7 @@
   <ItemGroup>
     <Compile Include="Assets\Game.cs" />
     <Compile Include="Assets\Ghost.cs" />
+    <Compile Include="Assets\OneUp.cs" />
     <Compile Include="Assets\Player.cs" />
     <Compile Include="Assets\PointGate.cs" />
     <Compile Include="Assets\SpawnPoint.cs" />
