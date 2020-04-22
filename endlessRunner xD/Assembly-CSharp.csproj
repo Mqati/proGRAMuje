@@ -63,8 +63,10 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Game.cs" />
     <Compile Include="Assets\Ghost.cs" />
     <Compile Include="Assets\Player.cs" />
+    <Compile Include="Assets\PointGate.cs" />
     <Compile Include="Assets\SpawnPoint.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>P:/unity/endlessRunner xD/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

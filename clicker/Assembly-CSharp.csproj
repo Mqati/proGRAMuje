@@ -64,6 +64,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Clicker.cs" />
+    <Compile Include="Assets\PassiveButton.cs" />
     <Compile Include="Assets\UpgradeButton.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>P:/unity/clicker/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>

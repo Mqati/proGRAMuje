@@ -1,11 +1,16 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 public class Ghost : MonoBehaviour
 {
     // Update is called once per frame
+    private Player player;
+
+    private void Start()
+    {
+        player = GameObject.Find("player").GetComponent<Player>();
+    }
     void Update()
     {
         transform.Translate(Vector2.left * 5 * Time.deltaTime);
@@ -13,8 +18,11 @@ public class Ghost : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        if (collision.CompareTag("Player"))
+        {
+            Destroy(gameObject);
+            player.TakeHit();
+        }
     }
 
     
